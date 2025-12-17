@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.pythonPath": ".venv/Scripts/python.exe",
+		"editor.inlayHints.enabled": "on",
+		"python.analysis.indexing": true,
+		"integrated.terminal.defaultProfile.windows": "PowerShell",
+		"python.testing.pytestEnabled": true,
+		"python.testing.pytestPath": "./tests",
+		"editor.suggestSelection": "first",
+		"python.analysis.aiCodeActions": {
+			"implementAbstractClasses": true,
+			"generateSymbol": true,
+			"convertFormatString": true
+		},
+		"editor.defaultFormatter": "GitHub.copilot-chat",
+		"github.copilot-chat.enableEditorCompletions": true,
+		"github.copilot-chat.enableChatCompletions": true,
+		"github.copilot.chat.agent.autoFix": true
+	}
+}

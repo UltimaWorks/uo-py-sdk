@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uo-py-sdk"
+version = "0.1.0"
+description = "Python-oriented Ultima Online client `{type}.mul`/`{type}idx.mul` content reader/writer framework"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-Proprietary"
+authors = [{name = "JBob"}]
+keywords = ["ultima-online", "uo", "mul", "idx"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "pillow>=10",
+  "python-dotenv>=1",
+]
+
+[project.optional-dependencies]
+image = [
+  "Pillow>=10",
+]
+dev = [
+  "pytest>=8",
+  "customtkinter>=5.2",
+  "Pillow>=10",
+  "python-dotenv>=1",
+  "mkdocs>=1.5",
+  "mkdocs-material>=9",
+]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"uo_py_sdk" = ["py.typed"]
