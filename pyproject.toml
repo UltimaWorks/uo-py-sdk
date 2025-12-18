@@ -4,12 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uo-py-sdk"
-version = "0.1.0"
+version = "1.0.0"
 description = "Python-oriented Ultima Online client `{type}.mul`/`{type}idx.mul` content reader/writer framework"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "LicenseRef-Proprietary"
-authors = [{name = "JBob"}]
+authors = [{name = "UltimaWorks"}]
+
 keywords = ["ultima-online", "uo", "mul", "idx"]
 classifiers = [
   "Programming Language :: Python :: 3",
