@@ -34,6 +34,15 @@ from .skill_groups import SkillGroups, SkillGroup
 from .cliloc import Cliloc, ClilocEntry, CliLocFlag
 from .animinfo import AnimInfo, AnimInfoEntry
 
+# Import new abstractions introduced for extended client configuration and
+# storage backends.  These are intentionally lazily imported here to
+# maintain backwards compatibility – existing code that imports
+# ``uo_py_sdk.ultima`` will find these names on the module without
+# altering the original API surface.
+
+from .client import ClientProfile, UltimaClient
+from .asset_store import IAssetStore, MulIdxStore, MmapMulIdxStore, CachedAssetStore
+
 __all__ = [
 	"Art",
 	"Animations",
@@ -80,4 +89,11 @@ __all__ = [
 	"CliLocFlag",
 	"AnimInfo",
 	"AnimInfoEntry",
+	# New: asset store abstractions and client profile/entry point
+	"ClientProfile",
+	"UltimaClient",
+	"IAssetStore",
+	"MulIdxStore",
+	"MmapMulIdxStore",
+	"CachedAssetStore",
 ]
