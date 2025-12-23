@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "uo-py-sdk"
-version = "1.0.0"
+version = "1.0.1"
 description = "Python-oriented Ultima Online client `{type}.mul`/`{type}idx.mul` content reader/writer framework"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -20,11 +20,7 @@ dependencies = [
   "pillow>=10",
   "python-dotenv>=1",
 ]
-
 [project.optional-dependencies]
-image = [
-  "Pillow>=10",
-]
 dev = [
   "pytest>=8",
   "customtkinter>=5.2",
